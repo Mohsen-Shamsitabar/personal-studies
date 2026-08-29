@@ -2,24 +2,24 @@
 
 <sub>These are the most used Utility Types:</sub>
 
-- [Awaited](#utility-types--awaited)
-- [Partial](#utility-types--partial)
-- [Required](#utility-types--required)
-- [Readonly](#utility-types--readonly)
-- [Record](#utility-types--record)
-- [Pick](#utility-types--pick)
-- [Omit](#utility-types--omit)
-- [Exclude](#utility-types--exclude)
-- [Extract](#utility-types--extract)
-- [NonNullable](#utility-types--nonnullable)
-- [ReturnType](#utility-types--returntype)
-- [InstanceType](#utility-types--instancetype)
+- [Awaited](#ts-utility-types--awaited)
+- [Partial](#ts-utility-types--partial)
+- [Required](#ts-utility-types--required)
+- [Readonly](#ts-utility-types--readonly)
+- [Record](#ts-utility-types--record)
+- [Pick](#ts-utility-types--pick)
+- [Omit](#ts-utility-types--omit)
+- [Exclude](#ts-utility-types--exclude)
+- [Extract](#ts-utility-types--extract)
+- [NonNullable](#ts-utility-types--nonnullable)
+- [ReturnType](#ts-utility-types--returntype)
+- [InstanceType](#ts-utility-types--instancetype)
 
 <sub>[Read more...](https://www.typescriptlang.org/docs/handbook/utility-types.html)</sub>
 
-<a name="utility-types--awaited" id="utility-types--awaited"></a>
-
 ---
+
+<a name="ts-utility-types--awaited" id="ts-utility-types--awaited"></a>
 
 ## `Awaited<T>`
 
@@ -35,7 +35,7 @@ type C = Awaited<boolean | Promise<number>>;
 
 ---
 
-<a name="utility-types--partial" id="utility-types--partial"></a>
+<a name="ts-utility-types--partial" id="ts-utility-types--partial"></a>
 
 ## `Partial<T>`
 
@@ -69,7 +69,7 @@ todo2 = {
 
 ---
 
-<a name="utility-types--required" id="utility-types--required"></a>
+<a name="ts-utility-types--required" id="ts-utility-types--required"></a>
 
 ## `Required<T>`
 
@@ -92,7 +92,7 @@ but required in type 'Required<Props>'.
 
 ---
 
-<a name="utility-types--readonly" id="utility-types--readonly"></a>
+<a name="ts-utility-types--readonly" id="ts-utility-types--readonly"></a>
 
 ## `Readonly<T>`
 
@@ -113,7 +113,7 @@ todo.title = "Hello";
 
 ---
 
-<a name="utility-types--record" id="utility-types--record"></a>
+<a name="ts-utility-types--record" id="ts-utility-types--record"></a>
 
 ## `Record<K, T>`
 
@@ -207,7 +207,7 @@ type User = Concrete<MaybeUser>;
 
 ---
 
-<a name="utility-types--pick" id="utility-types--pick"></a>
+<a name="ts-utility-types--pick" id="utility-types--pick"></a>
 
 ## `Pick<T, K>`
 
@@ -230,7 +230,7 @@ const todo: TodoPreview = {
 
 ---
 
-<a name="utility-types--omit" id="utility-types--omit"></a>
+<a name="ts-utility-types--omit" id="utility-types--omit"></a>
 
 ## `Omit<T, K>`
 
@@ -255,7 +255,7 @@ const todo: TodoPreview = {
 
 ---
 
-<a name="utility-types--exclude" id="utility-types--exclude"></a>
+<a name="ts-utility-types--exclude" id="utility-types--exclude"></a>
 
 ## `Exclude<T, U>`
 
@@ -287,7 +287,7 @@ type T1 =
 
 ---
 
-<a name="utility-types--extract" id="utility-types--extract"></a>
+<a name="ts-utility-types--extract" id="utility-types--extract"></a>
 
 ## `Extract<T, U>`
 
@@ -313,7 +313,7 @@ type T1 = Extract<Shape, { kind: "circle" }>;
 
 ---
 
-<a name="utility-types--nonnullable" id="utility-types--nonnullable"></a>
+<a name="ts-utility-types--nonnullable" id="utility-types--nonnullable"></a>
 
 ## `NonNullable<T>`
 
@@ -329,7 +329,7 @@ type T1 = NonNullable<string[] | null | undefined>;
 
 ---
 
-<a name="utility-types--returntype" id="utility-types--returntype"></a>
+<a name="ts-utility-types--returntype" id="utility-types--returntype"></a>
 
 ## `ReturnType<T>`
 
@@ -348,7 +348,7 @@ type T2 = ReturnType<<T>() => T>;
 
 ---
 
-<a name="utility-types--instancetype" id="utility-types--instancetype"></a>
+<a name="ts-utility-types--instancetype" id="utility-types--instancetype"></a>
 
 ## `InstanceType<T>`
 

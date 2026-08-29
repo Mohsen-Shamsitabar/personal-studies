@@ -1,3 +1,13 @@
+**Table of Contents**
+- [Rendering](#rendering--rendering)
+- [Step 1: Trigger a render](#rendering--step-1-trigger-a-render)
+- [Step 2: React renders your components](#rendering--step-2-react-renders-your-components)
+- [Step 3: React commits changes to the DOM](#rendering--step-3-react-commits-changes-to-the-dom)
+- [Summary](#rendering--summary)
+
+---
+<a name="rendering--rendering" id="rendering--rendering"></a>
+
 # Rendering
 
 Before your components are displayed on screen, they must be rendered by React. Understanding the steps in this process will help you think about how your code executes and explain its behavior.
@@ -9,6 +19,8 @@ Imagine that your components are cooks in the kitchen, assembling tasty dishes f
 2. **Rendering** the component (preparing the order in the kitchen)
 
 3. **Committing** to the DOM (placing the order on the table)
+
+<a name="rendering--step-1-trigger-a-render" id="rendering--step-1-trigger-a-render"></a>
 
 ## Step 1: Trigger a render
 
@@ -33,6 +45,8 @@ root.render(<Image />);
 ### Re-renders when state updates
 
 Once the component has been initially rendered, you can trigger further renders by updating its state with the `set` function. Updating your component’s state automatically queues a render. (You can imagine these as a restaurant guest ordering tea, dessert, and all sorts of things after putting in their first order, depending on the state of their thirst or hunger.)
+
+<a name="rendering--step-2-react-renders-your-components" id="rendering--step-2-react-renders-your-components"></a>
 
 ## Step 2: React renders your components
 
@@ -64,6 +78,8 @@ Otherwise, you can encounter confusing bugs and unpredictable behavior as your c
 
 The default behavior of rendering all components nested within the updated component is not optimal for performance if the updated component is very high in the tree. If you run into a performance issue, there are several opt-in ways to solve it described in the [Performance](https://reactjs.org/docs/optimizing-performance.html) section. **Don’t optimize prematurely!**
 
+<a name="rendering--step-3-react-commits-changes-to-the-dom" id="rendering--step-3-react-commits-changes-to-the-dom"></a>
+
 ## Step 3: React commits changes to the DOM
 
 After rendering (calling) your components, React will modify the DOM.
@@ -73,6 +89,8 @@ After rendering (calling) your components, React will modify the DOM.
 - **For re-renders**, React will apply the minimal necessary operations (calculated while rendering!) to make the DOM match the latest rendering output.
 
 React only changes the DOM nodes if there’s a difference between renders.
+
+<a name="rendering--summary" id="rendering--summary"></a>
 
 ## Summary
 
