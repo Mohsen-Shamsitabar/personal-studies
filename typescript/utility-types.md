@@ -59,6 +59,12 @@ const todo1 = {
 const todo2 = updateTodo(todo1, {
   description: "throw out trash",
 });
+/*
+todo2 = {
+  title: "organize desk",
+  description: "throw out trash",
+} 
+*/
 ```
 
 ---
