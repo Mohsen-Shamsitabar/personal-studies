@@ -1,17 +1,16 @@
-# Topics:
-
-- [Type Inferring vs Type Assertion](#infer-vs-assert)
-- [Satisfies Keyword](#satisfies-keyword)
-- [Type Predicates](#type-predicates)
-- [Function Overloads](#function-overload)
-- [Rest Parameters and Arguments](#rest-params-and-args)
-- [Types and Interfaces](#type-vs-interface)
-- [Generic Constraints](#generic-constraints)
-- [Template Literal Types](#template-literal)
+**Table of Contents**
+- [Type Inferring vs Type Assertion](#ts-notes--type-inferring-vs-type-assertion)
+- [Satisfies Keyword](#ts-notes--satisfies-keyword)
+- [Type Predicates](#ts-notes--type-predicates)
+- [Function Overloads](#ts-notes--function-overloads)
+- [Rest Parameters and Arguments](#ts-notes--rest-parameters-and-arguments)
+- [Types and Interfaces](#ts-notes--types-and-interfaces)
+- [Generic Constraints](#ts-notes--generic-constraints)
+- [Template Literal Types](#ts-notes--template-literal-types)
 
 ---
 
-<a name="infer-vs-assert" id="infer-vs-assert"></a>
+<a name="ts-notes--type-inferring-vs-type-assertion" id="ts-notes--type-inferring-vs-type-assertion"></a>
 
 ## Type Inferring vs Type Assertion:
 
@@ -50,7 +49,7 @@ Therefore `zoo1` can now also accept any `Animal`.
 
 ---
 
-<a name="satisfies-keyword" id="satisfies-keyword"></a>
+<a name="ts-notes--satisfies-keyword" id="ts-notes--satisfies-keyword"></a>
 
 ## Satisfies Keyword
 
@@ -107,7 +106,7 @@ palette.red.toUpperCase(); // OK, palette.red is string
 
 ---
 
-<a name="type-predicates" id="type-predicates"></a>
+<a name="ts-notes--type-predicates" id="ts-notes--type-predicates"></a>
 
 ## Type predicates
 
@@ -136,7 +135,7 @@ if (isFish(pet)) {
 
 ---
 
-<a name="function-overload" id="function-overload"></a>
+<a name="ts-notes--function-overloads" id="ts-notes--function-overloads"></a>
 
 ## Function Overloads
 
@@ -180,7 +179,7 @@ class Point {
 
 ---
 
-<a name="rest-params-and-args" id="rest-params-and-args"></a>
+<a name="ts-notes--rest-parameters-and-arguments" id="ts-notes--rest-parameters-and-arguments"></a>
 
 ## Rest Parameters and Arguments
 
@@ -212,7 +211,7 @@ arr1.push(...arr2);
 
 ---
 
-<a name="type-vs-interface" id="type-vs-interface"></a>
+<a name="ts-notes--types-and-interfaces" id="ts-notes--types-and-interfaces"></a>
 
 ## Differences Between Types and Interfaces
 
@@ -275,7 +274,7 @@ type Window = {
 
 ---
 
-<a name="generic-constraints" id="generic-constraints"></a>
+<a name="ts-notes--generic-constraints" id="ts-notes--generic-constraints"></a>
 
 ## Generic Constraints
 
@@ -326,7 +325,7 @@ to parameter of type '"a" | "b" | "c" | "d"'.
 
 ---
 
-<a name="template-literal" id="template-literal"></a>
+<a name="ts-notes--template-literal-types" id="ts-notes--template-literal-types"></a>
 
 ## Template Literal Types
 
