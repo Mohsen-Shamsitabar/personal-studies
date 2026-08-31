@@ -1,11 +1,11 @@
 **Table of Contents**
-- [Component Life Cycle](#notes--component-life-cycle)
-- [Differences between refs and state](#notes--differences-between-refs-and-state)
+- [Component Life Cycle](#react-notes--component-life-cycle)
+- [Differences between refs and state](#react-notes--differences-between-refs-and-state)
 
 
 ---
 
-<a name="notes--component-life-cycle" id="notes--component-life-cycle"></a>
+<a name="react-notes--component-life-cycle" id="react-notes--component-life-cycle"></a>
 
 ## Component Life Cycle
 
@@ -17,7 +17,7 @@ It is **not recommended** to use lifecycle methods **manually**. Instead, use th
 
 ---
 
-<a name="notes--differences-between-refs-and-state" id="notes--differences-between-refs-and-state"></a>
+<a name="react-notes--differences-between-refs-and-state" id="react-notes--differences-between-refs-and-state"></a>
 
 ## Differences between refs and state
 
@@ -28,7 +28,7 @@ It is **not recommended** to use lifecycle methods **manually**. Instead, use th
 | Mutable—you can modify and update `current`’s value outside of the rendering process. | ”Immutable”—you must use the state setting function to modify state variables to queue a re-render. |
 | You shouldn’t read (or write) the `current` value during rendering. | You can read state at any time. However, each render has its own [snapshot](https://react.dev/learn/state-as-a-snapshot) of state which does not change. |
 
-<a name="notes--when-to-use-refs" id="notes--when-to-use-refs"></a>
+<a name="react-notes--when-to-use-refs" id="react-notes--when-to-use-refs"></a>
 
 ### When to use refs
 
@@ -42,7 +42,7 @@ Typically, you will use a ref when your component needs to “step outside” Re
 
 If your component needs to store some value, but it doesn’t impact the rendering logic, choose refs.
 
-<a name="notes--summary" id="notes--summary"></a>
+<a name="react-notes--summary" id="react-notes--summary"></a>
 
 ### Summary
 

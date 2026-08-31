@@ -1,12 +1,12 @@
 **Table of Contents**
-- [Rendering](#rendering--rendering)
-- [Step 1: Trigger a render](#rendering--step-1-trigger-a-render)
-- [Step 2: React renders your components](#rendering--step-2-react-renders-your-components)
-- [Step 3: React commits changes to the DOM](#rendering--step-3-react-commits-changes-to-the-dom)
-- [Summary](#rendering--summary)
+- [Rendering](#react-rendering--rendering)
+- [Step 1: Trigger a render](#react-rendering--step-1-trigger-a-render)
+- [Step 2: React renders your components](#react-rendering--step-2-react-renders-your-components)
+- [Step 3: React commits changes to the DOM](#react-rendering--step-3-react-commits-changes-to-the-dom)
+- [Summary](#react-rendering--summary)
 
 ---
-<a name="rendering--rendering" id="rendering--rendering"></a>
+<a name="react-rendering--rendering" id="react-rendering--rendering"></a>
 
 # Rendering
 
@@ -20,7 +20,7 @@ Imagine that your components are cooks in the kitchen, assembling tasty dishes f
 
 3. **Committing** to the DOM (placing the order on the table)
 
-<a name="rendering--step-1-trigger-a-render" id="rendering--step-1-trigger-a-render"></a>
+<a name="react-rendering--step-1-trigger-a-render" id="react-rendering--step-1-trigger-a-render"></a>
 
 ## Step 1: Trigger a render
 
@@ -46,7 +46,7 @@ root.render(<Image />);
 
 Once the component has been initially rendered, you can trigger further renders by updating its state with the `set` function. Updating your component’s state automatically queues a render. (You can imagine these as a restaurant guest ordering tea, dessert, and all sorts of things after putting in their first order, depending on the state of their thirst or hunger.)
 
-<a name="rendering--step-2-react-renders-your-components" id="rendering--step-2-react-renders-your-components"></a>
+<a name="react-rendering--step-2-react-renders-your-components" id="react-rendering--step-2-react-renders-your-components"></a>
 
 ## Step 2: React renders your components
 
@@ -78,7 +78,7 @@ Otherwise, you can encounter confusing bugs and unpredictable behavior as your c
 
 The default behavior of rendering all components nested within the updated component is not optimal for performance if the updated component is very high in the tree. If you run into a performance issue, there are several opt-in ways to solve it described in the [Performance](https://reactjs.org/docs/optimizing-performance.html) section. **Don’t optimize prematurely!**
 
-<a name="rendering--step-3-react-commits-changes-to-the-dom" id="rendering--step-3-react-commits-changes-to-the-dom"></a>
+<a name="react-rendering--step-3-react-commits-changes-to-the-dom" id="react-rendering--step-3-react-commits-changes-to-the-dom"></a>
 
 ## Step 3: React commits changes to the DOM
 
@@ -90,7 +90,7 @@ After rendering (calling) your components, React will modify the DOM.
 
 React only changes the DOM nodes if there’s a difference between renders.
 
-<a name="rendering--summary" id="rendering--summary"></a>
+<a name="react-rendering--summary" id="react-rendering--summary"></a>
 
 ## Summary
 
