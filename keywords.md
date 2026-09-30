@@ -1,0 +1,323 @@
+# Keywords
+
+- API: Application Programming Interface
+- ABI: Application Binary Interface
+- AST: Abstract Syntax Tree
+- AOT: Ahead-of-Time Compilation
+- BDD: Behavior-Driven Development
+- CDN: Content Delivery Network
+- CI: Continuous Integration
+- CLI: Command-Line Interface
+- CORS: Cross-Origin Resource Sharing
+- CPU: Central Processing Unit
+- CQRS: Command Query Responsibility Segregation
+- CRUD: Create, Read, Update, Delete
+- CSR: Client-Side Rendering
+- CSP: Content Security Policy
+- CSS: Cascading Style Sheets
+- DDD: Domain-Driven Design
+- DI: Dependency Injection
+- DNS: Domain Name System
+- DOM: Document Object Model
+- DTO: Data Transfer Object
+- E2E: End-to-End Testing
+- ERP: Enterprise Resource Planning
+- FTP: File Transfer Protocol
+- GC: Garbage Collection
+- GUI: Graphical User Interface
+- HATEOAS: Hypermedia as the Engine of Application State
+- HMR: Hot Module Replacement
+- HTML: HyperText Markup Language
+- HTTP: HyperText Transfer Protocol
+- HTTPS: HyperText Transfer Protocol Secure
+- IDE: Integrated Development Environment
+- IIFE: Immediately Invoked Function Expression
+- IoC: Inversion of Control
+- IPC: Inter-Process Communication
+- ISR: Incremental Static Regeneration
+- JIT: Just-in-Time Compilation
+- JSON: JavaScript Object Notation
+- JWT: JSON Web Token
+- KISS: Keep It Simple, Stupid
+- KMS: Key Management Service
+- LTS: Long-Term Support
+- MVP: Minimum Viable Product
+- MVC: Model-View-Controller
+- MVVM: Model-View-ViewModel
+- NPM: Node Package Manager
+- ORM: Object-Relational Mapping
+- PWA: Progressive Web Application
+- QA: Quality Assurance
+- RDBMS: Relational Database Management System
+- REST: Representational State Transfer
+- RPC: Remote Procedure Call
+- SaaS: Software as a Service
+- SDK: Software Development Kit
+- SEO: Search Engine Optimization
+- SPA: Single Page Application
+- SQL: Structured Query Language
+- SSG: Static Site Generation
+- SSR: Server-Side Rendering
+- SSO: Single Sign-On
+- TDD: Test-Driven Development
+- TLS: Transport Layer Security
+- TTL: Time to Live
+- TCP: Transmission Control Protocol
+- UDP: User Datagram Protocol
+- UI: User Interface
+- UML: Unified Modeling Language
+- URI: Uniform Resource Identifier
+- URL: Uniform Resource Locator
+- UX: User Experience
+- VPN: Virtual Private Network
+- WASM: WebAssembly
+- WYSIWYG: What You See Is What You Get
+- XML: Extensible Markup Language
+- XSS: Cross-Site Scripting
+- YAGNI: You Aren't Gonna Need It
+- YAML: YAML Ain't Markup Language
+- ACID: Atomicity, Consistency, Isolation, Durability
+- CAP: Consistency, Availability, Partition Tolerance
+- CRUD: Create, Read, Update, Delete
+- DRY: Don't Repeat Yourself
+- SOLID: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- RESTful: Representational State Transfer-based
+- CI/CD: Continuous Integration and Continuous Delivery/Deployment
+- DevOps: Development and Operations
+- DevSecOps: Development, Security, and Operations
+- IaC: Infrastructure as Code
+- IaC: Infrastructure as Code
+- SRE: Site Reliability Engineering
+- TDD: Test-Driven Development
+- BDD: Behavior-Driven Development
+- UAT: User Acceptance Testing
+- QA: Quality Assurance
+- MVP: Minimum Viable Product
+- PoC: Proof of Concept
+- POC: Proof of Concept
+- OOP: Object-Oriented Programming
+- FP: Functional Programming
+- SOLID: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- OCP: Open/Closed Principle
+- SRP: Single Responsibility Principle
+- LSP: Liskov Substitution Principle
+- ISP: Interface Segregation Principle
+- DIP: Dependency Inversion Principle
+- MVC: Model-View-Controller
+- MVP: Model-View-Presenter
+- MVVM: Model-View-ViewModel
+- MPA: Multi-Page Application
+- SPA: Single Page Application
+- PWA: Progressive Web Application
+- SSR: Server-Side Rendering
+- CSR: Client-Side Rendering
+- SSG: Static Site Generation
+- ISR: Incremental Static Regeneration
+- RSC: React Server Components
+- API: Application Programming Interface
+- REST: Representational State Transfer
+- SOAP: Simple Object Access Protocol
+- GraphQL: Graph Query Language
+- RPC: Remote Procedure Call
+- gRPC: Google Remote Procedure Call
+- WebSocket: WebSocket Protocol
+- SSE: Server-Sent Events
+- CORS: Cross-Origin Resource Sharing
+- CSRF: Cross-Site Request Forgery
+- XSS: Cross-Site Scripting
+- SQLi: SQL Injection
+- SSRF: Server-Side Request Forgery
+- DoS: Denial of Service
+- DDoS: Distributed Denial of Service
+- TLS: Transport Layer Security
+- SSL: Secure Sockets Layer
+- OAuth: Open Authorization
+- OIDC: OpenID Connect
+- JWT: JSON Web Token
+- RBAC: Role-Based Access Control
+- ABAC: Attribute-Based Access Control
+- MFA: Multi-Factor Authentication
+- 2FA: Two-Factor Authentication
+- SSO: Single Sign-On
+- CRUD: Create, Read, Update, Delete
+- ACID: Atomicity, Consistency, Isolation, Durability
+- BASE: Basically Available, Soft State, Eventual Consistency
+- CAP: Consistency, Availability, Partition Tolerance
+- RDBMS: Relational Database Management System
+- NoSQL: Not Only SQL
+- ORM: Object-Relational Mapping
+- ODM: Object-Document Mapping
+- DDL: Data Definition Language
+- DML: Data Manipulation Language
+- DQL: Data Query Language
+- DCL: Data Control Language
+- ETL: Extract, Transform, Load
+- ELT: Extract, Load, Transform
+- CDN: Content Delivery Network
+- DNS: Domain Name System
+- DHCP: Dynamic Host Configuration Protocol
+- TCP: Transmission Control Protocol
+- UDP: User Datagram Protocol
+- IP: Internet Protocol
+- IPv4: Internet Protocol Version 4
+- IPv6: Internet Protocol Version 6
+- SSH: Secure Shell
+- FTP: File Transfer Protocol
+- SFTP: SSH File Transfer Protocol
+- SMTP: Simple Mail Transfer Protocol
+- IMAP: Internet Message Access Protocol
+- POP3: Post Office Protocol Version 3
+- NAT: Network Address Translation
+- LAN: Local Area Network
+- WAN: Wide Area Network
+- VPN: Virtual Private Network
+- URI: Uniform Resource Identifier
+- URL: Uniform Resource Locator
+- URN: Uniform Resource Name
+- CI: Continuous Integration
+- CD: Continuous Delivery
+- CD: Continuous Deployment
+- CI/CD: Continuous Integration and Continuous Delivery/Deployment
+- IaC: Infrastructure as Code
+- VM: Virtual Machine
+- VCS: Version Control System
+- SCM: Source Code Management
+- Git: Distributed Version Control System
+- DevOps: Development and Operations
+- DevSecOps: Development, Security, and Operations
+- SRE: Site Reliability Engineering
+- SLA: Service Level Agreement
+- SLO: Service Level Objective
+- SLI: Service Level Indicator
+- MTTR: Mean Time to Recovery
+- MTBF: Mean Time Between Failures
+- RTO: Recovery Time Objective
+- RPO: Recovery Point Objective
+- KPI: Key Performance Indicator
+- SDK: Software Development Kit
+- API: Application Programming Interface
+- CLI: Command-Line Interface
+- GUI: Graphical User Interface
+- IDE: Integrated Development Environment
+- REPL: Read-Eval-Print Loop
+- AST: Abstract Syntax Tree
+- JIT: Just-in-Time Compilation
+- AOT: Ahead-of-Time Compilation
+- GC: Garbage Collection
+- IR: Intermediate Representation
+- ABI: Application Binary Interface
+- FFI: Foreign Function Interface
+- DSL: Domain-Specific Language
+- GPL: GNU General Public License
+- MIT: MIT License
+- BSD: Berkeley Software Distribution
+- OSS: Open-Source Software
+- TDD: Test-Driven Development
+- BDD: Behavior-Driven Development
+- ATDD: Acceptance Test-Driven Development
+- E2E: End-to-End Testing
+- UAT: User Acceptance Testing
+- QA: Quality Assurance
+- QC: Quality Control
+- SUT: System Under Test
+- AUT: Application Under Test
+- CI: Continuous Integration
+- TCR: Test && Commit || Revert
+- LOC: Lines of Code
+- SLOC: Source Lines of Code
+- DRY: Don't Repeat Yourself
+- KISS: Keep It Simple, Stupid
+- YAGNI: You Aren't Gonna Need It
+- WET: Write Everything Twice
+- SOLID: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- OOP: Object-Oriented Programming
+- FP: Functional Programming
+- DOP: Data-Oriented Programming
+- AOP: Aspect-Oriented Programming
+- DDD: Domain-Driven Design
+- BFF: Backend for Frontend
+- SOA: Service-Oriented Architecture
+- EDA: Event-Driven Architecture
+- ES: Event Sourcing
+- CQRS: Command Query Responsibility Segregation
+- DDD: Domain-Driven Design
+- DDD: Domain-Driven Design
+- DTO: Data Transfer Object
+- DAO: Data Access Object
+- VO: Value Object
+- POJO: Plain Old Java Object
+- POCO: Plain Old CLR Object
+- DI: Dependency Injection
+- IoC: Inversion of Control
+- SRP: Single Responsibility Principle
+- OCP: Open/Closed Principle
+- LSP: Liskov Substitution Principle
+- ISP: Interface Segregation Principle
+- DIP: Dependency Inversion Principle
+- UML: Unified Modeling Language
+- ERD: Entity-Relationship Diagram
+- ADR: Architecture Decision Record
+- MVP: Minimum Viable Product
+- PoC: Proof of Concept
+- POC: Proof of Concept
+- RFC: Request for Comments
+- PR: Pull Request
+- MR: Merge Request
+- WIP: Work in Progress
+- MVP: Minimum Viable Product
+- SLA: Service Level Agreement
+- SLO: Service Level Objective
+- SLI: Service Level Indicator
+- RACI: Responsible, Accountable, Consulted, Informed
+- SDLC: Software Development Life Cycle
+- ALM: Application Lifecycle Management
+- SCM: Software Configuration Management
+- CMS: Content Management System
+- CRM: Customer Relationship Management
+- ERP: Enterprise Resource Planning
+- SaaS: Software as a Service
+- PaaS: Platform as a Service
+- IaaS: Infrastructure as a Service
+- FaaS: Function as a Service
+- DBaaS: Database as a Service
+- BaaS: Backend as a Service
+- CDN: Content Delivery Network
+- DNS: Domain Name System
+- CNAME: Canonical Name
+- TTL: Time to Live
+- HTTP: HyperText Transfer Protocol
+- HTTPS: HyperText Transfer Protocol Secure
+- HSTS: HTTP Strict Transport Security
+- CSP: Content Security Policy
+- MIME: Multipurpose Internet Mail Extensions
+- JSON: JavaScript Object Notation
+- JSONP: JSON with Padding
+- XML: Extensible Markup Language
+- YAML: YAML Ain't Markup Language
+- CSV: Comma-Separated Values
+- JWT: JSON Web Token
+- JWK: JSON Web Key
+- JWS: JSON Web Signature
+- JWE: JSON Web Encryption
+- CORS: Cross-Origin Resource Sharing
+- XHR: XMLHttpRequest
+- DOM: Document Object Model
+- BOM: Browser Object Model
+- PWA: Progressive Web Application
+- WASM: WebAssembly
+- WebRTC: Web Real-Time Communication
+- HMR: Hot Module Replacement
+- SSR: Server-Side Rendering
+- CSR: Client-Side Rendering
+- SSG: Static Site Generation
+- ISR: Incremental Static Regeneration
+- RSC: React Server Components
+- JSX: JavaScript XML
+- TSX: TypeScript JSX
+- TS: TypeScript
+- JS: JavaScript
+- ES: ECMAScript
+- ECMAScript: European Computer Manufacturers Association Script
+- NPM: Node Package Manager
+- CDN: Content Delivery Network
+- PWA: Progressive Web Application
