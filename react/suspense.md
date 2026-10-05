@@ -1,22 +1,20 @@
 **Table of Contents**
 
 - [Suspense](#suspense)
-- [How it works with server-side rendering](#suspense--how-ssr)
-- [Data fetching patterns in React](#suspense--patterns)
-- - [Fetch on render](#suspense--f-o-r)
-- - [Fetch then render](#suspense--f-t-r)
-- - [Render while fetching](#suspense--r-w-f)
-- [Suspense use cases](#suspense--cases)
-- - [Data fetching](#suspense--fetching)
-- - [Lazy loading](#suspense--lazy)
-- - [Handling multiple async operations](#suspense--multi-async)
-- - [SSR](#suspense--ssr)
+- [How it works with server-side rendering](#how-it-works-with-server-side-rendering)
+- [Data fetching patterns in React](#data-fetching-patterns-in-react)
+- - [Fetch on render](#fetch-on-render)
+- - [Fetch then render](#fetch-then-render)
+- - [Render while fetching](#render-as-you-fetch)
+- [Suspense use cases](#use-cases-of-suspense)
+- - [Data fetching](#1-data-fetching)
+- - [Lazy loading](#2-lazy-loading)
+- - [Handling multiple async operations](#3-handling-multiple-asynchronous-operations)
+- - [SSR](#4-server-side-rendering-ssr)
 
 [<sub>Source</sub>](https://hygraph.com/blog/react-suspense)
 
 ---
-
-<a name="suspense" id="suspense"></a>
 
 # Suspense
 
@@ -34,21 +32,15 @@ When React encounters a Suspense component, it checks if any child components ar
 
 In this code snippet, until the data for `Books` is ready, the `Suspense` component displays a fallback UI, in this case, a loading message. This clarifies to the user that the content is being fetched, providing a more seamless experience.
 
-<a name="suspense--how-ssr" id="suspense--how-ssr"></a>
-
 # How it works with server-side rendering
 
 React Suspense also enhances server-side rendering (SSR) by allowing you to render parts of your application progressively.
 
 With SSR, you can use renderToPipeableStream to load essential parts of your page first and progressively load the remaining parts as they become available. Suspense manages the fallbacks during this process, improving performance, user experience, and SEO.
 
-<a name="suspense--patterns" id="suspense--patterns"></a>
-
 # Data fetching patterns in React
 
 When a React component needs data from an API, there are three common data fetching patterns: **fetch on render**, **fetch then render**, and **render as you fetch** (which is what React Suspense facilitates). Each pattern has its strengths and weaknesses.
-
-<a name="suspense--f-o-r" id="suspense--f-o-r"></a>
 
 ## Fetch on render
 
@@ -76,8 +68,6 @@ const UserProfile = () => {
 ```
 
 In this example, the `fetch` request is triggered in the `useEffect` hook after the component mounts. The loading state is managed by checking if the `user` data is available. This approach can lead to a network waterfall effect, where each subsequent component waits for the previous one to fetch data, causing delays.
-
-<a name="suspense--f-t-r" id="suspense--f-t-r"></a>
 
 ## Fetch then render
 
@@ -116,8 +106,6 @@ const UserProfile = ({ user }) => (
 In this example, the `fetchUserData` function is called before the component mounts, and the data is set in the `useEffect` hook. The loading state is managed similarly by checking if the `user` data is available.
 
 This method starts fetching early but still waits for all promises to be resolved before rendering useful data, which can lead to delays if one request is slow.
-
-<a name="suspense--r-w-f" id="suspense--r-w-f"></a>
 
 ## Render as you fetch
 
@@ -163,17 +151,11 @@ In this example, the `fetchUserData` function starts fetching data immediately a
 
 This pattern allows each component to manage its loading state independently, reducing wait times and improving the application's overall responsiveness.
 
-<a name="suspense--cases" id="suspense--cases"></a>
-
 # Use cases of Suspense
-
-<a name="suspense--fetching" id="suspense--fetching"></a>
 
 ## 1. Data fetching
 
 As shown above.
-
-<a name="suspense--lazy" id="suspense--lazy"></a>
 
 ## 2. Lazy loading components
 
@@ -192,8 +174,6 @@ const App = () => (
 ```
 
 In this code, the `<Suspense>` component specifies a fallback message ("Loading component...") to display while the `LazyComponent` is being fetched and loaded.
-
-<a name="suspense--multi-async" id="suspense--multi-async"></a>
 
 ## 3. Handling multiple asynchronous operations
 
@@ -283,8 +263,6 @@ const App = () => (
   </div>
 );
 ```
-
-<a name="suspense--ssr" id="suspense--ssr"></a>
 
 ## 4. Server-side rendering (SSR)
 

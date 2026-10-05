@@ -1,22 +1,18 @@
 **Table of Contents**
 
 - [React Router](#react-router)
-- [Navigation menu](#react-router--nav-menu)
-- [Outlets](#react-router--outlet)
-- [Dynamic Routes](#react-router--dynamic)
-- [Protected Routes](#react-router--protected)
+- [Navigation menu](#navigation-menu)
+- [Outlets](#outlets)
+- [Dynamic Routes](#dynamic-routes)
+- [Protected Routes](#protected-routes)
 
 ---
-
-<a name="react-router" id="react-router"></a>
 
 # React Router
 
 A router in React handles navigation between different views or pages without reloading the whole browser page. It matches the current URL to a specific component and renders it, giving the app the feel of multiple pages while staying a single-page application. Several libraries exist to add this functionality, since React itself does not include routing.
 
 [React Router](https://reactrouter.com/home) is primarily a fully-featured routing solution for React apps. It offers pre-developed components, Hooks, and utility functions to create modern routing strategies. React Router is notable because it also uses the full-stack framework Remix. As a result, React Router has a wide range of use cases that span from simple routing to a full-stack framework.
-
-<a name="react-router--nav-menu" id="react-router--nav-menu"></a>
 
 ## Adding a navigation menu
 
@@ -38,8 +34,6 @@ The `Link` component works very similarly to the HTML anchor tag. It has a `to` 
   Somewhere
 </NavLink>
 ```
-
-<a name="react-router--outlet" id="react-router--outlet"></a>
 
 ## `<Outlet/>`
 
@@ -90,8 +84,6 @@ DashboardLayout
 
 The `<Outlet />` inside `DashboardLayout` is where `<Profile />` is rendered. Similarly, `/dashboard/settings` renders `<Settings />` in the same `<Outlet />` location.
 
-<a name="react-router--dynamic" id="react-router--dynamic"></a>
-
 ## Dynamic Routes
 
 Dynamic routes allow a route to match different URL values using dynamic segments. A dynamic segment is defined by placing a parameter name after a colon (`:`), such as `:id`.
@@ -126,8 +118,6 @@ Now different URLs will use the same component:
 ```
 
 Here, `:id` is the dynamic route parameter, and its value can be retrieved using `useParams()`.
-
-<a name="react-router--protected" id="react-router--protected"></a>
 
 ## Protected Routes
 

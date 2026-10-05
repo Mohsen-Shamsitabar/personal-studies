@@ -2,24 +2,22 @@
 
 <sub>These are the most used Utility Types:</sub>
 
-- [Awaited](#ts-utility-types--awaited)
-- [Partial](#ts-utility-types--partial)
-- [Required](#ts-utility-types--required)
-- [Readonly](#ts-utility-types--readonly)
-- [Record](#ts-utility-types--record)
-- [Pick](#ts-utility-types--pick)
-- [Omit](#ts-utility-types--omit)
-- [Exclude](#ts-utility-types--exclude)
-- [Extract](#ts-utility-types--extract)
-- [NonNullable](#ts-utility-types--nonnullable)
-- [ReturnType](#ts-utility-types--returntype)
-- [InstanceType](#ts-utility-types--instancetype)
+- [Awaited](#awaitedt)
+- [Partial](#partialt)
+- [Required](#requiredt)
+- [Readonly](#readonlyt)
+- [Record](#recordk-t)
+- [Pick](#pickt-k)
+- [Omit](#omitt-k)
+- [Exclude](#excludet-u)
+- [Extract](#extractt-u)
+- [NonNullable](#nonnullablet)
+- [ReturnType](#returntypet)
+- [InstanceType](#instancetypet)
 
-<sub>[Read more...](https://www.typescriptlang.org/docs/handbook/utility-types.html)</sub>
+<sub>[Source](https://www.typescriptlang.org/docs/handbook/utility-types.html)</sub>
 
 ---
-
-<a name="ts-utility-types--awaited" id="ts-utility-types--awaited"></a>
 
 ## `Awaited<T>`
 
@@ -34,8 +32,6 @@ type C = Awaited<boolean | Promise<number>>;
 ```
 
 ---
-
-<a name="ts-utility-types--partial" id="ts-utility-types--partial"></a>
 
 ## `Partial<T>`
 
@@ -69,8 +65,6 @@ todo2 = {
 
 ---
 
-<a name="ts-utility-types--required" id="ts-utility-types--required"></a>
-
 ## `Required<T>`
 
 Constructs a type consisting of all properties of `T` set to required. The opposite of [Partial](#utility-types--partial).
@@ -92,8 +86,6 @@ but required in type 'Required<Props>'.
 
 ---
 
-<a name="ts-utility-types--readonly" id="ts-utility-types--readonly"></a>
-
 ## `Readonly<T>`
 
 Constructs a type with all properties of `T` set to `readonly`, meaning the properties of the constructed type cannot be reassigned.
@@ -112,8 +104,6 @@ todo.title = "Hello";
 ```
 
 ---
-
-<a name="ts-utility-types--record" id="ts-utility-types--record"></a>
 
 ## `Record<K, T>`
 
@@ -207,8 +197,6 @@ type User = Concrete<MaybeUser>;
 
 ---
 
-<a name="ts-utility-types--pick" id="utility-types--pick"></a>
-
 ## `Pick<T, K>`
 
 Constructs a type by picking the set of properties `K` (string literal or union of string literals) from `T`.
@@ -229,8 +217,6 @@ const todo: TodoPreview = {
 ```
 
 ---
-
-<a name="ts-utility-types--omit" id="utility-types--omit"></a>
 
 ## `Omit<T, K>`
 
@@ -254,8 +240,6 @@ const todo: TodoPreview = {
 ```
 
 ---
-
-<a name="ts-utility-types--exclude" id="utility-types--exclude"></a>
 
 ## `Exclude<T, U>`
 
@@ -287,8 +271,6 @@ type T1 =
 
 ---
 
-<a name="ts-utility-types--extract" id="utility-types--extract"></a>
-
 ## `Extract<T, U>`
 
 Constructs a type by extracting from `T` all union members that are assignable to `U`.
@@ -313,8 +295,6 @@ type T1 = Extract<Shape, { kind: "circle" }>;
 
 ---
 
-<a name="ts-utility-types--nonnullable" id="utility-types--nonnullable"></a>
-
 ## `NonNullable<T>`
 
 Constructs a type by excluding `null` and `undefined` from `T`.
@@ -328,8 +308,6 @@ type T1 = NonNullable<string[] | null | undefined>;
 ```
 
 ---
-
-<a name="ts-utility-types--returntype" id="utility-types--returntype"></a>
 
 ## `ReturnType<T>`
 
@@ -347,8 +325,6 @@ type T2 = ReturnType<<T>() => T>;
 ```
 
 ---
-
-<a name="ts-utility-types--instancetype" id="utility-types--instancetype"></a>
 
 ## `InstanceType<T>`
 

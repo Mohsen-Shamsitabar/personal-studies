@@ -1,11 +1,37 @@
 **Table of Contents**
 
-* [What is The Internet?](#internet)
+* [What is The Internet](#what-is-the-internet)
+* [How does the Internet work](#how-does-the-internet-work)
+* * [A network of networks](#a-network-of-networks)
+* * [Domain names](#domain-names)
+* * [Internet and the Web](#internet-and-the-web)
+* * [Intranets and Extranets](#intranets-and-extranets)
+* [What is HTTP](#what-is-http)
+* * [What is an HTTP request](#what-is-an-http-request)
+* * [What is an HTTP method](#what-is-an-http-method)
+* * [What are HTTP headers](#what-are-http-headers)
+* * [What is an HTTP request body](#what-is-and-http-request-body)
+* * [What is an HTTP response](#what-is-and-http-response)
+* * [What's an HTTP status code](#whats-an-http-status-code)
+* * [What is in an HTTP response body](#what-is-in-an-http-response-body)
+* * [Can DDoS attacks be launched over HTTP](#can-ddos-attacks-be-launched-over-http)
+* [What is a Domain name](#what-is-a-domain-name)
+* * [Structure of domain names](#structure-of-domain-names)
+* * [Who owns a domain name](#who-owns-a-domain-name)
+* * [Finding an available domain name](#finding-an-available-domain-name)
+* * [DNS refreshing](#dns-refreshing)
+* * [How does a DNS request work](#how-does-a-dns-request-work)
+* [What is DNS](#what-is-dns)
+* * [How does DNS work](#how-does-dns-work)
+* * [There are 4 DNS servers involved in loading a webpage](#there-are-4-dns-servers-involved-in-loading-a-webpage)
+* * [What are the steps in a DNS lookup](#what-are-the-steps-in-a-dns-lookup)
+* * [What is DNS caching](#what-is-dns-caching-where-does-dns-caching-occur)
+* * * [Browser DNS caching](#browser-dns-caching)
+* * * [OS level DNS caching](#operating-system-os-level-dns-caching)
 
 
 ---
 
-<a name="internet" id="internet"></a>
 
 # What is The Internet?
 
@@ -95,7 +121,7 @@ Each HTTP request made across the Internet carries with it a series of encoded d
 
 An HTTP method, sometimes referred to as an HTTP verb, indicates the action that the HTTP request expects from the queried server. For example, two of the most common HTTP methods are `‘GET’` and `‘POST’`; a `‘GET’` request expects information back in return (usually in the form of a website), while a `‘POST’` request typically indicates that the client is submitting information to the web server (such as form information, e.g. a submitted username and password).
 
-## What are HTTP request/response headers?
+## What are HTTP headers?
 
 HTTP headers contain text information stored in key-value pairs, and they are included in every HTTP request/response. These headers communicate core information, such as what browser the client is using and what data is being requested/fetched.
 

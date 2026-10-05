@@ -1,20 +1,19 @@
 **Table of Contents**
-- [Type Inferring vs Type Assertion](#ts-notes--type-inferring-vs-type-assertion)
-- [Satisfies Keyword](#ts-notes--satisfies-keyword)
-- [Type Predicates](#ts-notes--type-predicates)
-- [Function Overloads](#ts-notes--function-overloads)
-- [Rest Parameters and Arguments](#ts-notes--rest-parameters-and-arguments)
-- [Types and Interfaces](#ts-notes--types-and-interfaces)
-- [Generic Constraints](#ts-notes--generic-constraints)
-- [Template Literal Types](#ts-notes--template-literal-types)
+
+- [Type Inferring vs Type Assertion](#type-inferring-vs-type-assertion)
+- [Satisfies Keyword](#satisfies-keyword)
+- [Type Predicates](#type-predicates)
+- [Function Overloads](#function-overloads)
+- [Rest Parameters and Arguments](#rest-parameters-and-arguments)
+- [Types and Interfaces](#differences-between-types-and-interfaces)
+- [Generic Constraints](#generic-constraints)
+- [Template Literal Types](#template-literal-types)
 
 ---
 
-<a name="ts-notes--type-inferring-vs-type-assertion" id="ts-notes--type-inferring-vs-type-assertion"></a>
+# Type Inferring vs Type Assertion:
 
-## Type Inferring vs Type Assertion:
-
-### Inferring:
+## Inferring:
 
 Typescript automatically determines the type of a variable based on its value and content.
 
@@ -32,7 +31,7 @@ const zoo2: Animal[] = [new Cat(), new Dog(), new Rhino()];
 
 This is useful because later on we might wana add new instances of `Animal` to our `zoo` array. We can do this with `zoo2` since it infers the type `Animal[]`, however we cannot add new animals to `zoo1` other than those that instance `Cat`, `Dog` or `Rhino`.
 
-### Assertion:
+## Assertion:
 
 However, with assertion, we can completly change how typescript handles type-checking. _(directly communicating with the compiler)_
 
@@ -49,9 +48,7 @@ Therefore `zoo1` can now also accept any `Animal`.
 
 ---
 
-<a name="ts-notes--satisfies-keyword" id="ts-notes--satisfies-keyword"></a>
-
-## Satisfies Keyword
+# Satisfies Keyword
 
 The `satisfies` keyword in TypeScript is used to ensure that a value conforms to a specific type without explicitly declaring that type. This is particularly useful when you want to check that an object's structure matches a type definition but still allow TypeScript to infer a more specific type for the object's properties. It validates the shape of the value against the specified type, and if valid it retains the initial type information.
 
@@ -106,9 +103,7 @@ palette.red.toUpperCase(); // OK, palette.red is string
 
 ---
 
-<a name="ts-notes--type-predicates" id="ts-notes--type-predicates"></a>
-
-## Type predicates
+# Type predicates
 
 To define a user-defined type guard, we simply need to define a function whose return type is a _type predicate_:
 
@@ -135,9 +130,7 @@ if (isFish(pet)) {
 
 ---
 
-<a name="ts-notes--function-overloads" id="ts-notes--function-overloads"></a>
-
-## Function Overloads
+# Function Overloads
 
 Some JavaScript functions can be called in a variety of argument counts and types. For example, you might write a function to produce a `Date` that takes either a timestamp (one argument) or a month/day/year specification (three arguments).
 
@@ -179,11 +172,9 @@ class Point {
 
 ---
 
-<a name="ts-notes--rest-parameters-and-arguments" id="ts-notes--rest-parameters-and-arguments"></a>
+# Rest Parameters and Arguments
 
-## Rest Parameters and Arguments
-
-### Rest Parameters
+## Rest Parameters
 
 In addition to using optional parameters or overloads to make functions that can accept a variety of fixed argument counts, we can also define functions that take an _unbounded_ number of arguments using _rest parameters_.
 
@@ -198,7 +189,7 @@ function multiply(n: number, ...m: number[]) {
 const a = multiply(10, 1, 2, 3, 4);
 ```
 
-### Rest Arguments
+## Rest Arguments
 
 Conversely, we can _provide_ a variable number of arguments from an iterable object (for example, an array) using the spread syntax. For example, the `push` method of arrays takes any number of arguments:
 
@@ -211,9 +202,7 @@ arr1.push(...arr2);
 
 ---
 
-<a name="ts-notes--types-and-interfaces" id="ts-notes--types-and-interfaces"></a>
-
-## Differences Between Types and Interfaces
+# Differences Between Types and Interfaces
 
 Type aliases and interfaces are very similar, and in many cases you can choose between them freely. Almost all features of an `interface` are available in `type`.
 
@@ -274,9 +263,7 @@ type Window = {
 
 ---
 
-<a name="ts-notes--generic-constraints" id="ts-notes--generic-constraints"></a>
-
-## Generic Constraints
+# Generic Constraints
 
 You may sometimes want to write a generic function that works on a set of types where you have some knowledge about what capabilities that set of types will have. In the example below, we want to be able to access the `.length` property of `arg`, but the compiler could not prove that every type had a `.length` property, so it warns us that we can’t make this assumption.
 
@@ -304,7 +291,7 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
 }
 ```
 
-### Using Type Parameters in Generic Constraints
+## Using Type Parameters in Generic Constraints
 
 You can declare a type parameter that is constrained by another type parameter. For example, here we’d like to get a property from an object given its name. We’d like to ensure that we’re not accidentally grabbing a property that does not exist on the `obj`, so we’ll place a constraint between the two types:
 
@@ -325,9 +312,7 @@ to parameter of type '"a" | "b" | "c" | "d"'.
 
 ---
 
-<a name="ts-notes--template-literal-types" id="ts-notes--template-literal-types"></a>
-
-## Template Literal Types
+# Template Literal Types
 
 Template literal types build on string literal types, and have the ability to expand into many strings via unions. They have the same syntax as template literal strings in JavaScript, but are used in type positions. When used with concrete literal types, a template literal produces a new string literal type by concatenating the contents.
 

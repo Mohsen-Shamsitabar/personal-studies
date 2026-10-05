@@ -1,29 +1,27 @@
 **Table of Contents**
 
-* [What is GraphQL?](#graphql--what-is-graphql)
-* [Why was GraphQL created?](#graphql--why-was-graphql-created)
-* [How GraphQL works](#graphql--how-graphql-works)
-* [The GraphQL schema](#graphql--the-graphql-schema)
-* [Queries](#graphql--queries)
-* [Arguments and variables](#graphql--arguments-and-variables)
-* [Mutations](#graphql--mutations)
-* [Fragments](#graphql--fragments)
-* [Aliases](#graphql--aliases)
-* [Nested data](#graphql--nested-data)
-* [Resolvers](#graphql--resolvers)
-* [GraphQL types](#graphql--graphql-types)
-* [Nullability and lists](#graphql--nullability-and-lists)
-* [Errors in GraphQL](#graphql--errors-in-graphql)
-* [Subscriptions](#graphql--subscriptions)
-* [GraphQL vs REST](#graphql--graphql-vs-rest)
-* [Common use cases](#graphql--common-use-cases)
-* [When should you use GraphQL?](#graphql--when-should-you-use-graphql)
-* [Common pitfalls](#graphql--common-pitfalls)
-* [Summary](#graphql--summary)
+* [What is GraphQL?](#what-is-graphql)
+* [Why was GraphQL created?](#why-was-graphql-created)
+* [How GraphQL works](#how-graphql-works)
+* [The GraphQL schema](#the-graphql-schema)
+* [Queries](#queries)
+* [Arguments and variables](#arguments-and-variables)
+* [Mutations](#mutations)
+* [Fragments](#fragments)
+* [Aliases](#aliases)
+* [Nested data](#nested-data)
+* [Resolvers](#resolvers)
+* [GraphQL types](#graphql-types)
+* [Nullability and lists](#nullability-and-lists)
+* [Errors in GraphQL](#errors-in-graphql)
+* [Subscriptions](#subscriptions)
+* [GraphQL vs REST](#graphql-vs-rest)
+* [Common use cases](#common-use-cases)
+* [When should you use GraphQL?](#when-should-you-use-graphql)
+* [Common pitfalls](#common-pitfalls)
+* [Summary](#summary)
 
-**---**
-
-<a name="graphql--what-is-graphql" id="graphql--what-is-graphql"></a>
+---
 
 # What is GraphQL?
 
@@ -78,8 +76,6 @@ This is one of the main ideas behind GraphQL:
 
 > The client describes the shape of the data it needs, and the server returns data in that shape.
 
-<a name="graphql--why-was-graphql-created" id="graphql--why-was-graphql-created"></a>
-
 # Why was GraphQL created?
 
 GraphQL was originally developed by Facebook to solve problems that appeared while building data-heavy applications.
@@ -126,8 +122,6 @@ GraphQL therefore focuses heavily on:
 * Providing a strongly typed API schema
 * Reducing unnecessary data transfer
 * Making APIs easier to evolve
-
-<a name="graphql--how-graphql-works" id="graphql--how-graphql-works"></a>
 
 # How GraphQL works
 
@@ -179,8 +173,6 @@ A GraphQL server can obtain its data from many different sources:
 
 GraphQL does not require a specific database.
 
-<a name="graphql--the-graphql-schema" id="graphql--the-graphql-schema"></a>
-
 # The GraphQL schema
 
 The schema describes what clients are allowed to request.
@@ -221,8 +213,6 @@ query {
 ```
 
 GraphQL can reject the query because `username` isn't defined on the `User` type.
-
-<a name="graphql--queries" id="graphql--queries"></a>
 
 # Queries
 
@@ -278,8 +268,6 @@ might return:
 
 The client does not need to receive `email`, `phone`, `address`, or other fields that it didn't request.
 
-<a name="graphql--arguments-and-variables" id="graphql--arguments-and-variables"></a>
-
 # Arguments and variables
 
 GraphQL fields can accept arguments.
@@ -324,8 +312,6 @@ The `$userId: ID!` declaration means:
 * `$userId` is the variable name.
 * `ID` is its type.
 * `!` means the value is required.
-
-<a name="graphql--mutations" id="graphql--mutations"></a>
 
 # Mutations
 
@@ -393,8 +379,6 @@ The server can return the newly created object:
 }
 ```
 
-<a name="graphql--fragments" id="graphql--fragments"></a>
-
 # Fragments
 
 Fragments allow you to reuse groups of fields.
@@ -428,8 +412,6 @@ query {
 ```
 
 Fragments are particularly useful in larger applications where the same fields are requested in many different places.
-
-<a name="graphql--aliases" id="graphql--aliases"></a>
 
 # Aliases
 
@@ -465,8 +447,6 @@ The response can then contain:
 ```
 
 Without aliases, both fields would have the same response name: `user`.
-
-<a name="graphql--nested-data" id="graphql--nested-data"></a>
 
 # Nested data
 
@@ -524,8 +504,6 @@ This produces a nested response:
 ```
 
 This makes GraphQL particularly useful for applications with highly connected data.
-
-<a name="graphql--resolvers" id="graphql--resolvers"></a>
 
 # Resolvers
 
@@ -588,8 +566,6 @@ This is why GraphQL itself is not a database.
 
 It is an API layer that can sit on top of many different data sources.
 
-<a name="graphql--graphql-types" id="graphql--graphql-types"></a>
-
 # GraphQL types
 
 GraphQL has a type system that describes the data available through the API.
@@ -632,8 +608,6 @@ The type system makes the API predictable and allows tools to provide features s
 * Documentation
 * Type checking
 * Schema exploration
-
-<a name="graphql--nullability-and-lists" id="graphql--nullability-and-lists"></a>
 
 # Nullability and lists
 
@@ -684,8 +658,6 @@ Conceptually:
    +----- The list itself must exist
 ```
 
-<a name="graphql--errors-in-graphql" id="graphql--errors-in-graphql"></a>
-
 # Errors in GraphQL
 
 GraphQL responses can contain both `data` and `errors`.
@@ -721,8 +693,6 @@ For example, one requested field might succeed while another fails.
 
 This is particularly useful when a query requests several independent pieces of information.
 
-<a name="graphql--subscriptions" id="graphql--subscriptions"></a>
-
 # Subscriptions
 
 Subscriptions are used when the client needs to receive updates when something happens on the server.
@@ -750,8 +720,6 @@ A subscription could be used for:
 * Collaborative applications
 
 The exact transport mechanism depends on the GraphQL implementation, but subscriptions are commonly associated with persistent connections such as WebSockets.
-
-<a name="graphql--graphql-vs-rest" id="graphql--graphql-vs-rest"></a>
 
 # GraphQL vs REST
 
@@ -796,8 +764,6 @@ Some important differences:
 Neither approach automatically makes an API better for every application.
 
 The appropriate choice depends on factors such as the data model, clients, infrastructure, caching strategy, team experience, and performance requirements.
-
-<a name="graphql--common-use-cases" id="graphql--common-use-cases"></a>
 
 # Common use cases
 
@@ -870,8 +836,6 @@ Frontend applications frequently change which information they display.
 
 GraphQL allows clients to request additional fields without necessarily requiring a new endpoint for every new UI requirement.
 
-<a name="graphql--when-should-you-use-graphql" id="graphql--when-should-you-use-graphql"></a>
-
 # When should you use GraphQL?
 
 GraphQL can be a good fit when:
@@ -893,8 +857,6 @@ A simpler REST API may be preferable when:
 * The additional GraphQL infrastructure would not provide enough benefit.
 
 GraphQL is an API technology, not a requirement for every application.
-
-<a name="graphql--common-pitfalls" id="graphql--common-pitfalls"></a>
 
 # Common pitfalls
 
@@ -998,8 +960,6 @@ Because clients control the shape of queries, a server should consider protectio
 GraphQL allows related data to be requested together, but that does not mean every piece of data should be requested in one enormous query.
 
 Queries should still be designed around the actual requirements of the application.
-
-<a name="graphql--summary" id="graphql--summary"></a>
 
 # Summary
 
