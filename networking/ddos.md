@@ -1,20 +1,24 @@
 **Table of Contents**
 
-* [What is a DDoS attack?](#ddos)
+* [What is a DDoS attack](#what-is-a-ddos-attack)
+* [How does a DDoS attack work](#how-does-a-ddos-attack-work)
+* [What are common types of DDoS attacks](#what-are-common-types-of-ddos-attacks)
+* * [Volumetric attacks](#volumetric-attacks)
+* * [Protocol attacks](#protocol-attacks)
+* * [Application layer attacks](#application-layer-attacks)
+* [How is a DDoS attack mitigated](#how-is-a-ddos-attack-mitigated)
 
 [<sub>Source</sub>](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/)
 
 ---
 
-<a name="ddos" id="ddos"></a>
-
-# What is a DDoS attack
+# What is a DDoS attack?
 
 A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service, or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.
 
 DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of attack traffic. Exploited machines can include computers and other networked resources such as IoT devices.
 
-**From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing regular traffic from arriving at its destination.**
+>**From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing regular traffic from arriving at its destination.**
 
 # How does a DDoS attack work?
 

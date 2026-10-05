@@ -1,12 +1,12 @@
 **Table of Contents**
 
 - [Vitest](#vitest)
-- [Writing Tests](#vitest--writing)
-- [Grouping Tests with `describe`](#vitest--grouping)
-- [Test Files](#vitest--files)
-- [Parameterized Tests](#vitest--parameterized)
+- [Writing Tests](#writing-tests)
+- [Grouping Tests with `describe`](#grouping-tests-with-describe)
+- [Test Files](#test-files)
+- [Parameterized Tests](#parameterized-tests)
 
-[<sub>Read more...</sub>](https://vitest.dev/guide/)
+[<sub>Source</sub>](https://vitest.dev/guide/)
 
 ---
 
@@ -30,7 +30,7 @@ Add this script to `package.json`:
 
 <a name="vitest--writing" id="vitest--writing"></a>
 
-## Writing Tests
+# Writing Tests
 
 A test verifies that a piece of code produces the expected result. In Vitest, you use the `test` function to define a test, and `expect` to make assertions. Each test has a name (a string describing what it checks) and a function that contains one or more assertions. If any assertion fails, the test fails.
 
@@ -56,7 +56,7 @@ it('should compute square roots', () => {
 
 <a name="vitest--grouping" id="vitest--grouping"></a>
 
-## Grouping Tests with `describe`
+# Grouping Tests with `describe`
 
 As your test files grow, you'll want to organize related tests together. `describe` creates a test suite, which is a named group of tests:
 
@@ -81,13 +81,13 @@ describe('Math.sqrt', () => {
 
 <a name="vitest--files" id="vitest--files"></a>
 
-## Test Files
+# Test Files
 
 By default, Vitest looks for any file that contains `.test.` or `.spec.` in its name, such as `utils.test.js`, `app.spec.js`, or `math.test.jsx`. It searches in all subdirectories, so it doesn't matter where you place them.
 
 <a name="vitest--parameterized" id="vitest--parameterized"></a>
 
-## Parameterized Tests 
+# Parameterized Tests 
 
 When you have several test cases that only differ in their inputs and expected outputs, writing a separate `test` for each one gets repetitive. `test.for` lets you define the cases as data and run the same test logic for all of them:
 

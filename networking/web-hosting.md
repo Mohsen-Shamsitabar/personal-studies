@@ -1,11 +1,16 @@
 **Table of Contents**
 
-* [What is Web Hosting?](#hosting)
+* [What is Web Hosting](#what-is-web-hosting)
+* [What type of web hosting are there](#what-type-of-web-hosting-are-there)
+* * [Shared web hosting](#shared-web-hosting)
+* * [VPS hosting](#vps-hosting)
+* * [Dedicated hosting](#dedicated-hosting)
+* * [Cloud hosting](#cloud-hosting)
+* * [Reseller hosting](#reseller-hosting)
 
 
 ---
 
-<a name="hosting" id="hosting"></a>
 
 # What is Web Hosting?
 
@@ -28,13 +33,13 @@ What are server resources and why do they matter?
 - **Storage** determines how much content you can host and how quickly it’s retrieved.
 - **Bandwidth** controls how much data can be transferred; higher limits mean better uptime under traffic spikes.
 
-## What type of web hosting are there?
+# What type of web hosting are there?
 
 Web hosting comes in several different forms, each designed for different levels of performance, control, and scalability. Whether you’re building a simple blog or running a high-traffic business site, understanding the main hosting types helps you choose the plan that fits your needs and budget. Below is a breakdown of the most common hosting options.
 
 ![hosting-types](./assets/hosting-types.png)
 
-### Shared web hosting
+## Shared web hosting
 
 Shared hosting means multiple websites share the same server and its resources (like CPU, RAM, and bandwidth). It’s the most affordable and beginner-friendly option, ideal for small or low-traffic sites that don’t require advanced configuration.
 
@@ -46,7 +51,7 @@ Shared hosting means multiple websites share the same server and its resources (
 - Not ideal for scaling or heavy workloads
 - Best for personal websites, blogs, and small business sites
 
-### VPS hosting
+## VPS hosting
 
 With VPS hosting, you get a dedicated slice of server resources within a shared physical machine, offering more control and performance than shared hosting without the cost of a full dedicated server.
 
@@ -56,7 +61,7 @@ With VPS hosting, you get a dedicated slice of server resources within a shared 
 - Requires some technical know-how to manage and secure
 - Best for growing websites or businesses needing more flexibility
 
-### Dedicated hosting
+## Dedicated hosting
 
 Dedicated hosting gives you an entire physical server exclusively for your website or applications, offering maximum control, performance, and reliability.
 
@@ -66,7 +71,7 @@ Dedicated hosting gives you an entire physical server exclusively for your websi
 - Requires strong technical or system administration skills
 - Best for high-traffic sites, enterprise workloads, or compliance-sensitive projects
 
-### Cloud hosting
+## Cloud hosting
 
 Cloud hosting uses a network of connected servers to distribute resources and handle demand dynamically, ensuring strong uptime and flexible scaling.
 
@@ -76,7 +81,7 @@ Cloud hosting uses a network of connected servers to distribute resources and ha
 - May cost more as usage increases
 - Can require more setup or technical management than shared plans
 
-### Reseller hosting
+## Reseller hosting
 
 Reseller hosting lets you buy server resources in bulk and sell hosting plans under your own brand, using management tools to handle multiple clients efficiently.
 

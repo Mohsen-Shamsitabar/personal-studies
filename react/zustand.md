@@ -1,23 +1,19 @@
 **Table of Contents**
 
 - [Zustand](#zustand)
-- [Only export custom hooks](#zustand--exports)
-- [Separate Actions from State](#zustand--actions)
-- [Model Actions as Events, not Setters](#zustand--action-model)
+- [Only export custom hooks](#only-export-custom-hooks)
+- [Separate Actions from State](#separate-actions-from-state)
+- [Model Actions as Events, not Setters](#model-actions-as-events-not-setters)
 
-<sub>source: https://tkdodo.eu/blog/working-with-zustand</sub>
+[<sub>Source</sub>](https://tkdodo.eu/blog/working-with-zustand)
 
 ---
-
-<a name="zustand" id="zustand"></a>
 
 # Zustand
 
 **Zustand** is a small state management library that uses a single store defined with a simple function, without requiring reducers or actions like Redux. Components can read and update the store directly through a hook, with minimal boilerplate. Its simplicity and small bundle size make it a common choice for apps that outgrow plain Context.
 
-<a name="zustand--exports" id="zustand--exports"></a>
-
-## Only export custom hooks
+# Only export custom hooks
 
 ```tsx
 // ⬇️ not exported, so that no one can subscribe to the entire store
@@ -41,9 +37,7 @@ They’ll give you a cleaner interface, and you don’t need to write the select
 const { bears } = useBearStore()
 ```
 
-<a name="zustand--actions" id="zustand--actions"></a>
-
-## Separate Actions from State
+# Separate Actions from State
 
 Actions are functions which update values in your store. These are static and never change, so they aren’t technically “state”. Organising them into a separate object in our store will allow us to expose them as a single hook to be used in any our components without any impact on performance:
 
@@ -68,9 +62,7 @@ export const useBearActions = () =>
   useBearStore((state) => state.actions)
 ```
 
-<a name="zustand--action-model" id="zustand--action-model"></a>
-
-## Model Actions as Events, not Setters
+# Model Actions as Events, not Setters
 
 This is a general tip, no matter if you’re working with useReducer (opens in a new window), Redux or Zustand. In fact, this tip is straight from the magnificent Redux style guide (opens in a new window). It will help you keep your business logic inside your store, and not in your components.
 

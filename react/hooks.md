@@ -1,18 +1,17 @@
 **Table of Contents**
-- [Hooks](#hooks--hooks)
-- [`useState`](#hooks--usestate)
-- [`useRef`](#hooks--useref)
-- [`useEffect`](#hooks--useeffect)
-- [`useMemo`](#hooks--usememo)
-- [`useCallback`](#hooks--usecallback)
-- [`useReducer`](#hooks--usereducer)
-- [`useContext`](#hooks--usecontext)
-- [Writing Custom Hooks](#hooks--writing-custom-hooks)
+
+- [Hooks](#hooks)
+- [`useState`](#usestate)
+- [`useRef`](#useref)
+- [`useEffect`](#useeffect)
+- [`useMemo`](#usememo)
+- [`useCallback`](#usecallback)
+- [`useReducer`](#usereducer)
+- [`useContext`](#usecontext)
+- [Writing Custom Hooks](#writing-custom-hooks)
 
 
 ---
-
-<a name="hooks--hooks" id="hooks--hooks"></a>
 
 # Hooks
 
@@ -23,8 +22,6 @@ Hooks **can only** be called at the **top level of our components** or in our **
 Everything related to hooks must be [pure](https://react.dev/learn/keeping-components-pure).
 
 Read more about hooks [here...](https://react.dev/reference/rules/rules-of-hooks)
-
-<a name="hooks--usestate" id="hooks--usestate"></a>
 
 ## `useState`
 
@@ -147,8 +144,6 @@ You can reset a component’s state by passing a different `key` to a component.
 Remember the **component life cycle**?
 This is exactly that, changing the key tells React to remount the component. (unmount -> mount)
 
-<a name="hooks--useref" id="hooks--useref"></a>
-
 ## `useRef`
 
 `useRef` is a React hook that provides a way to create a mutable reference that persists across component re-renders. It stores a value that doesn't cause re-renders when it changes.
@@ -234,8 +229,6 @@ function Video() {
 ```
 
 Normally, writing or reading `ref.current` during render is not allowed. However, it’s fine in this case because the result is always the same, and the condition only executes during initialization so it’s fully predictable.
-
-<a name="hooks--useeffect" id="hooks--useeffect"></a>
 
 ## `useEffect`
 
@@ -324,8 +317,6 @@ function ChatRoom({ roomId }) {
 
 and much more, take a look [here](https://react.dev/reference/react/useEffect#usage).
 
-<a name="hooks--usememo" id="hooks--usememo"></a>
-
 ## `useMemo`
 
 `useMemo` is a React hook that memoizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.
@@ -381,15 +372,11 @@ const List = memo(function List({ items }) {
 
 **Memoizing functions is common enough that React has a built-in Hook specifically for that.** Wrap your functions into `useCallback` instead of `useMemo` to avoid having to write an extra nested function.
 
-<a name="hooks--usecallback" id="hooks--usecallback"></a>
-
 ## `useCallback`
 
 `useCallback` is a React hook that returns a memoized version of a callback function. It's used to optimize performance by preventing unnecessary re-renders. Specifically, it helps avoid recreating functions when their dependencies haven't changed, which can be useful when passing callbacks to child components that rely on referential equality to prevent re-rendering.
 
 `useCallback` is exactly like `useMemo`, so check out [useMemo](#hooks--usememo) for documentation.
-
-<a name="hooks--usereducer" id="hooks--usereducer"></a>
 
 ## `useReducer`
 
@@ -528,8 +515,6 @@ Reducers are not without downsides! Here’s a few ways you can compare them:
 
 - **Personal preference:** Some people like reducers, others don’t. That’s okay. It’s a matter of preference. You can always convert between `useState` and `useReducer` back and forth: they are equivalent!
 
-<a name="hooks--usecontext" id="hooks--usecontext"></a>
-
 ## `useContext`
 
 **Passing Data Deeply with Context**
@@ -634,8 +619,6 @@ You can override the context for a part of the tree by wrapping that part in a p
 ```
 
 You can nest and override providers as many times as you need.
-
-<a name="hooks--writing-custom-hooks" id="hooks--writing-custom-hooks"></a>
 
 ## Writing Custom Hooks
 
