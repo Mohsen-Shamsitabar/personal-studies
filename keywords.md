@@ -321,3 +321,4 @@
 - NPM: Node Package Manager
 - CDN: Content Delivery Network
 - PWA: Progressive Web Application
+- DDoS: distributed denial-of-service
