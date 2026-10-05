@@ -170,7 +170,7 @@ The CSSOM tree includes styles from the user agent style sheet. The browser begi
 
 Building the CSSOM is very, very fast, and this build time information is not displayed in the developer tools. Rather, the "Recalculate Style" in developer tools shows the total time it takes to parse CSS, construct the CSSOM tree, and recursively calculate computed styles. In terms of web performance, there are many better ways to invest optimization effort, as the total time to create the CSSOM is generally less than the time it takes for one DNS lookup.
 
-<img src="./assets/CSSOM-tree.png" style="background-color:white;">
+<img src="./assets/CSSOM-tree.png" style="background-color:white;"/>
 
 ## Other processes
 
@@ -178,7 +178,7 @@ Building the CSSOM is very, very fast, and this build time information is not di
 
 While the CSS is being parsed and the CSSOM created, other assets, including JavaScript files, are downloading (thanks to the preload scanner). JavaScript is parsed, compiled, and interpreted. The scripts are parsed into abstract syntax trees. Some browser engines take the abstract syntax trees and pass them into a compiler, outputting bytecode. This is known as JavaScript compilation. Most of the code is interpreted on the main thread, but there are exceptions such as code run in [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API).
 
-<img src="./assets/abstract-syntax-tree.svg" style="background-color:white;padding:0.25rem;">
+<img src="./assets/abstract-syntax-tree.svg" style="background-color:white;padding:0.25rem;"/>
 
 ### Building the accessibility tree
 
