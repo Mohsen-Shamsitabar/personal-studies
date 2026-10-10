@@ -6,18 +6,6 @@
 
 This repository serves as a centralized knowledge base containing organized study materials across different technology domains. Each topic includes detailed notes, examples, and references compiled during my learning journey.
 
-## Current Study Topics
-
-### **TypeScript**
-- **Core Concepts**: Type inference, type assertions, function overloads, template literal types
-- **Advanced Features**: Generic constraints, type predicates, utility types
-- **Reference Materials**: TypeScript cheat sheets and comprehensive documentation
-
-### **React**
-- **Fundamentals**: Component lifecycle, refs vs state, rendering mechanisms
-- **Best Practices**: Lists and keys, performance optimization patterns
-- **Core Patterns**: Functional components, hooks, and modern React architecture
-
 ## Purpose
 
 This repository documents concepts, patterns, and insights that I find particularly:
